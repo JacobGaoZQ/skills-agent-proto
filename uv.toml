@@ -1,0 +1,9 @@
+# 设置阿里云镜像源
+index-url = "https://mirrors.aliyun.com/pypi/simple/"
+
+# 允许跳过 SSL 检查的主机列表（对应你报错的两个域名）
+allow-insecure-host = [
+    "mirrors.aliyun.com",
+    "pypi.org",
+    "files.pythonhosted.org"
+]

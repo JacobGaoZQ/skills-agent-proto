@@ -186,11 +186,11 @@ When a user request matches a skill's description, use the load_skill tool to ge
             init_kwargs["base_url"] = base_url
 
         # Extended Thinking 配置（直接传递，避免 model_kwargs 警告）
-        if self.enable_thinking:
-            init_kwargs["thinking"] = {
-                "type": "enabled",
-                "budget_tokens": self.thinking_budget,
-            }
+        # if self.enable_thinking:
+        #     init_kwargs["thinking"] = {
+        #         "type": "enabled",
+        #         "budget_tokens": self.thinking_budget,
+        #     }
 
         # 初始化模型
         model = init_chat_model(

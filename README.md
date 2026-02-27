@@ -35,7 +35,8 @@ ANTHROPIC_BASE_URL=https://api.jiekou.ai/anthropic
 ### 3. 交互式验证
 
 ```bash
-uv run langchain-skills --interactive
+# 替代 uv run langchain-skills --interactive
+uv run python -m langchain_skills.cli --interactive
 ```
 
 ## 三层加载演示
